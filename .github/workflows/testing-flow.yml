@@ -1,11 +1,10 @@
 name: Docker Image CI
 
 on:
-  secrets:
-            DOCKER_USERNAME:
-                required: true
-            DOCKER_PASSWORD:
-                required: true
+  workflow_run:
+    workflows: ["microblog"]
+    types:
+      - completed
 
 jobs:
 
