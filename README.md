@@ -5,6 +5,8 @@ Microblog
 
 [![Python application](https://github.com/idrees95/microblog/actions/workflows/microblog.yml/badge.svg?branch=master&event=push)](https://github.com/idrees95/microblog/actions/workflows/microblog.yml)
 
+[![Docker Image CI](https://github.com/idrees95/microblog/actions/workflows/docker-image.yml/badge.svg)](https://github.com/idrees95/microblog/actions/workflows/docker-image.yml)
+
 Course material for a devops course, aimed at a Swedish course in computer science on University level new to devops. The students are to further develop this application and integreate it with new tools.
 
 Released as part of a University course: https://dbwebb.se/kurser/devops
