@@ -1,0 +1,14 @@
+---
+root_password: $6$J1jN3b1oLGFiYWpO$DLm1lxyf9JKf7ZvmPOPhsMrU/T1TMbKOIZO90yceXHWTA1HQ2bKE65RhHNNdnhxjARoBYDNcKkR/qCjvBEdis.
+
+server_user: deploy
+server_user_pass: $6$GwOd9t7k11JK.4g1$FD9h1bsyK.Hq.PzonoYgYE.Ct5U0kn0Ub/nSX3rGDT5jZqbuievPNU8WgPjKF2wZQsyf4Ct5ZS8TFsl6tXr8t1
+
+server_user_groups:
+    -   sudo
+    
+
+pub_ssh_key_location:
+    -   ~/.ssh/azure.pub
+
+ansible_python_interpreter: /usr/bin/python3
