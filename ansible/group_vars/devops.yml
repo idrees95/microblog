@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 root_password: $6$J1jN3b1oLGFiYWpO$DLm1lxyf9JKf7ZvmPOPhsMrU/T1TMbKOIZO90yceXHWTA1HQ2bKE65RhHNNdnhxjARoBYDNcKkR/qCjvBEdis.
 
@@ -12,3 +13,6 @@ pub_ssh_key_location:
     -   ~/.ssh/azure.pub
 
 ansible_python_interpreter: /usr/bin/python3
+=======
+ansible_python_interpreter: /usr/bin/python3
+>>>>>>> 6163e0b81c6695e40950147660d0eb62925e0a59
