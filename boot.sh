@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source .venv9/bin/activate
+source venv9/bin/activate
 while true; do
     flask db upgrade
     if [[ "$?" == "0" ]]; then
