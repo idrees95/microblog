@@ -1,7 +1,6 @@
 http {
     upstream microblog {
         server {{ groups['appServer'][0] }}:8000;
-        server {{ groups['database'][0] }}:8000;
     }
 
     access_log /var/log/nginx/access.log;

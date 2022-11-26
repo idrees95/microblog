@@ -1,0 +1,19 @@
+---
+- name: Update apt-cache and upgrade
+  apt:
+    force_apt_get: yes
+    update_cache: "True"
+    cache_valid_time: 3600
+    upgrade: yes
+
+- name: Launching docker container for microblog
+  docker_container:
+        name: microblog
+        image: idsa18/microblog:1.0.1-prod
+        state: started
+        restart_policy: always
+        ports:
+          - "8000:5000"
+        env:
+          DATABASE_URL: "{{ db_url }}"
+

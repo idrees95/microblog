@@ -1,0 +1,39 @@
+---
+- name: Update apt-cache and upgrade
+  apt:
+      force_apt_get: yes
+      update_cache: True
+      cache_valid_time: 3600
+      upgrade: yes
+
+- name: Install Packages
+  apt:
+    force_apt_get: yes
+    name: "{{ packages }}"
+    state: present
+
+- name: Add Docker GPG apt Key
+  apt_key:
+    url: https://download.docker.com/linux/debian/gpg
+    state: present
+
+- name: Add Docker Repository
+  apt_repository:
+    repo: deb https://download.docker.com/linux/debian buster stable
+    state: present
+
+- name: Installing Docker with pip
+  pip:
+    name: docker
+    state: present
+    executable: pip3
+
+- name: Update apt and install docker-ce
+  apt:
+    force_apt_get: yes
+    name: "{{ docker_Installation_pkgs }}"
+    state: latest
+
+
+
+
