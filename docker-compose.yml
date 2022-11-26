@@ -1,7 +1,8 @@
 version: "3"
 services:
   prod:
-    image: idsa18/microblog:1.0.0-prod
+    # image: microblog:1.0.2-prod
+    image: idsa18/microblog:1.0.1-prod
     container_name: microblog-prod
     restart: always
     environment:
